@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Read a Cookie</title>
+        <script language="Javascript" type="text/Javascript">
+            function Read() {
+                var userid = document.getElementById("user").value;
+                document.cookie= "Username = "+userid;
+                var allcookie = document.cookie;
+                document.write(allcookie);
+                var cookiearray = allcookie.split(";");
+                for(var i=0; i<cookiearray.length; i++)
+            {
+                var name = cookiearray[i].split("=")[0];
+                var value = cookiearray[i].split("=")[1];
+            }
+            }
+        </script>
+        <body>
+            <form>
+                Enter Username : <input type="text" name="user"/>
+            <p><h3>ltes read the cookies present in our system. for reading those cookies pls click the following button.</h3></p>
+            <br>
+            <button onclick="Read()">Reading Cookie</button>
+            </form>
+        </body>
+    </head>
+</html>

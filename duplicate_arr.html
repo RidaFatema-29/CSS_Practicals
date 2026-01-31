@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>write a js code to that will remove the duplicate element from an array</title>
+        <script type="text/Javascript" language="Javascript">
+            function duplicate(){
+                var arr =["9","32","40"];
+                var arr2 = ["0","7","8","7"];
+                var db=arr.concate(arr2);
+                var unique = [];
+                // for(var i=0; i<db.length;i++){
+                //     if(unique.indexOf(db[i])===-1){
+                //         unique.push(db[i]);
+                //     }
+                // }
+                for(var i in db){
+                    document.write(db[i]);
+                    if(unique.indexOf(i)===-1){
+                       unique.push(i);
+                   }
+                }
+                document.write(unique);
+                
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="duplicate()">Lets click</button>
+    </body>
+</html>

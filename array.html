@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title> Array Object </title>
+        <script type="text/Javascript">
+            var objectArray = new Array(5);
+            objectArray[0] = 28;
+            objectArray[1] = 35;
+            objectArray[2] = 98;
+            objectArray[3] = 62;
+            // objectArray[4] = 78;
+
+            var i;
+
+            document.write("objectArray");
+            for(i=0; i< objectArray.length - 1;i++)
+        {
+            document.write("<br>");
+            document.write(objectArray[i]);
+
+        }
+        var num;
+        function insert() {
+             num= prompt("Enter an element which you want to insert into an array");
+        }
+        function beginning(){
+            objectArray.unshift(num);
+            for(i=0; i<objectArray.length - 1; i++)
+        {
+            document.write("<br>");
+            document.write(objectArray[i]);
+        }
+        }
+        function ending(){
+            objectArray.push(num);
+            for(i=0; i<objectArray.length - 1; i++)
+        {
+            document.write("<br>");
+            document.write(objectArray[i]);
+        }
+        }
+        function sorting(){
+            objectArray.sort();
+            for(i=0; i<objectArray.length - 1; i++)
+        {
+            document.write("<br>");
+            document.write(objectArray[i]);
+        }
+        }
+
+        </script>
+    </head>
+    <body>
+        <br>
+       <button onclick="insert()">Insert Element</button>
+       <br>
+       <button onclick="beginning()"> at Beginning </button>
+       <br>
+       <button onclick="ending()"> at Ending </button>
+       <br>
+       <br>
+       <br>
+       <button onclick="sorting()">  Sort ObjectArray  </button>
+
+    </body>
+</html>

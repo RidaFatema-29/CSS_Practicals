@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Write a js function to check the first character of string is in uppercase or not </title>
+        <script type="text/Javascript" language="Javascript">
+            function up() {
+                var regex= /^[A-Z]/g;
+                var str= prompt("Enter a Text");
+                var ch = str.charAt(0);
+                if(regex.test(ch))
+            {
+                document.write("Yes");
+            }
+            else{
+                document.write("No");
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="up()">Check</button>
+    </body>
+</html>
